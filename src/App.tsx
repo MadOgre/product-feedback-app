@@ -1,7 +1,9 @@
+import { HelloHell } from "./components/HelloHell";
+
 function App(): JSX.Element {
   return (
     <div>
-      Hello
+      <HelloHell />
     </div>
   );
 }
