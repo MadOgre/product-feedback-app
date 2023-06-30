@@ -1,0 +1,19 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  height: 100%;
+}
+
+.shelf {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.spacer {
+  flex: 1;
+}
