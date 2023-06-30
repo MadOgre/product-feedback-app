@@ -12,9 +12,9 @@ type TypographyComponent = (props: Props) => JSX.Element;
 const payload: Record<string, TypographyComponent> = {};
 
 const componentNames = [
+  "FeedbackBoardMobileText",
   "FrontendMentorMobileText",
   "NoFeedbackMobileText",
-  "FeedbackBoardMobileText",
 ];
 
 componentNames.forEach((item) => {

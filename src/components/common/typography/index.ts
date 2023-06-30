@@ -1,7 +1,7 @@
 import typographyComponents from "./Typography";
 
 export const {
+  FeedbackBoardMobileText,
   FrontendMentorMobileText,
   NoFeedbackMobileText,
-  FeedbackBoardMobileText,
 } = typographyComponents;

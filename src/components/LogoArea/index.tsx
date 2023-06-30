@@ -1,11 +1,10 @@
 import { Shelf, Spacer, Stack } from "components/common/layout";
 import {
-  FrontendMentorMobileText,
   FeedbackBoardMobileText,
+  FrontendMentorMobileText,
 } from "components/common/typography";
 
 import { HamburgerButton } from "components/HamburgerButton";
-// import { ReactComponent as HamburgerIcon } from "assets/shared/mobile/icon-hamburger.svg";
 
 import classes from "./LogoArea.module.scss";
 
