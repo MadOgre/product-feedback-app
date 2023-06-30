@@ -1,6 +1,7 @@
-import { FrontendMentorMobileText, NoFeedbackMobileText } from "components/common/typography";
-import { HelloHell } from "components/HelloHell";
 import { Shelf, Spacer } from "components/common/layout";
+import { FrontendMentorMobileText, NoFeedbackMobileText } from "components/common/typography";
+
+import { HelloHell } from "components/HelloHell";
 
 import { LogoArea } from "components/LogoArea";
 
