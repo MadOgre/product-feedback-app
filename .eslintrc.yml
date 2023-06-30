@@ -198,7 +198,7 @@ rules:
   no-ternary: off # too draconian
   no-throw-literal: off # superceded by the typescript-eslint version of the rule
   no-undef-init: warn
-  no-undefined: error
+  no-undefined: off
   no-underscore-dangle: off # I will dangle if I want
   no-unneeded-ternary:
     - warn
@@ -451,11 +451,7 @@ rules:
   "@typescript-eslint/prefer-nullish-coalescing": warn
   "@typescript-eslint/prefer-optional-chain": warn
   "@typescript-eslint/prefer-readonly": warn
-  "@typescript-eslint/prefer-readonly-parameter-types":
-    - warn
-    - checkParameterProperties: true
-      ignoreInferredTypes: true
-      treatMethodsAsReadonly: false
+  "@typescript-eslint/prefer-readonly-parameter-types": off # causes havoc with react children
   "@typescript-eslint/prefer-reduce-type-parameter": warn
   "@typescript-eslint/prefer-regexp-exec": warn
   "@typescript-eslint/prefer-return-this-type": warn
@@ -556,7 +552,7 @@ rules:
   react/default-props-match-prop-types: warn
   react/destructuring-assignment: warn
   react/display-name: warn
-  react/forbid-component-props: warn
+  react/forbid-component-props: off # silly restriction
   react/forbid-dom-props: off # not needed in this project
   react/forbid-elements: off # not needed in this project
   react/forbid-foreign-prop-types: off # not needed in this project
@@ -587,7 +583,9 @@ rules:
     - 2
     - checkAttributes: true
       indentLogicalExpressions: true
-  react/jsx-indent-props: warn
+  react/jsx-indent-props:
+    - warn
+    - 2
   react/jsx-key: warn
   react/jsx-max-depth: warn
   react/jsx-max-props-per-line: warn
@@ -650,9 +648,9 @@ rules:
   react/prefer-exact-props: warn
   react/prefer-read-only-props: warn
   react/prefer-stateless-function: warn
-  react/prop-types: warn
+  react/prop-types: off
   react/react-in-jsx-scope: off # not needed for CRA
-  react/require-default-props: warn
+  react/require-default-props: off
   react/require-optimization: warn
   react/require-render-return: warn
   react/self-closing-comp: warn
