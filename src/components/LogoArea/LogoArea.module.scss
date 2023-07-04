@@ -6,4 +6,11 @@
   height: 72px;
   padding: 0 24px;
   user-select: none;
+  position: fixed;
+  top: 0;
+  transform: translateY(0);
+  transition: transform .3s;
+  &.hidden {
+    transform: translateY(-72px);
+  }
 }
