@@ -1,13 +1,10 @@
-import { HelloHell } from "components/HelloHell";
-import { MobileLayout } from "components/MobileLayout";
 import { Shelf, Spacer } from "components/common/layout";
 import { FrontendMentorMobileText, NoFeedbackMobileText } from "components/common/typography";
-import { debounce } from "utils/debounce";
+
+import { HelloHell } from "components/HelloHell";
+import { MobileLayout } from "components/MobileLayout";
 
 function App(): JSX.Element {
-
-
-
   return (
     <div>
       <MobileLayout>
@@ -21,12 +18,6 @@ function App(): JSX.Element {
           <div style={{background: "green", width: "20px", height: "20px"}} />
           <Spacer />
           <div style={{background: "blue", width: "20px", height: "20px"}} />
-          <button
-            onClick={func1}
-            type="button"
-          >
-            click me
-          </button>
         </Shelf>
         <HelloHell />
         <HelloHell />
