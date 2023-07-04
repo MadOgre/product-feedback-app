@@ -1,0 +1,66 @@
+@import "../../colors.module.scss";
+
+.mobileLayoutMain {
+  height: 100%;
+  padding-top: 72px;
+  position: relative;
+}
+
+.shadowMask {
+  background-color: $black;
+  box-sizing: border-box;
+  height: 100%;
+  opacity: .5;
+  position: fixed;
+  top: 72px;
+  width: 100vw;
+}
+
+.sidebar {
+  background-color: $off-white;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 24px;
+  position: fixed;
+  right: 0;
+  top: 72px;
+  transform: translateX(0px);
+  width: 271px;
+  z-index: 2;
+}
+
+.sidebarEnter {
+  transform: translateX(271px);
+}
+
+.sidebarEnterActive {
+  transform: translateX(0px);
+  transition: transform .5s
+}
+
+.sidebarExit {
+  transform: translateX(0px);
+}
+
+.sidebarExitActive {
+  transform: translateX(271px);
+  transition: transform .5s
+}
+
+.shadowMaskEnter {
+  opacity: 0;
+}
+
+.shadowMaskEnterActive {
+  opacity: .5;
+  transition: opacity .5s
+}
+
+.shadowMaskExit {
+  opacity: .5;
+}
+
+.shadowMaskExitActive {
+  opacity: 0;
+  transition: opacity .5s
+}
