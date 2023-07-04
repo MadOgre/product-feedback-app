@@ -6,7 +6,6 @@ import { debounce } from "utils/debounce";
 
 function App(): JSX.Element {
 
-  const func1 = debounce(() => console.log("works"), 2000);
 
 
   return (
