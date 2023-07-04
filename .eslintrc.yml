@@ -117,7 +117,9 @@ rules:
   max-classes-per-file: warn
   max-depth: warn
   max-lines: warn # default 300
-  max-lines-per-function: warn # default 50
+  max-lines-per-function:
+    - warn
+    - max: 100 # default 50
   max-nested-callbacks:
     - warn
     - 3
@@ -313,7 +315,7 @@ rules:
   lines-between-class-members: off # not significant enough to be enforced, also too rigid
   max-len:
     - warn
-    - code: 100
+    - code: 140
   max-statements-per-line:
     - warn
     - max: 1
@@ -587,8 +589,10 @@ rules:
     - warn
     - 2
   react/jsx-key: warn
-  react/jsx-max-depth: warn
-  react/jsx-max-props-per-line: warn
+  react/jsx-max-depth: off
+  react/jsx-max-props-per-line:
+    - warn
+    - maximum: 4
   react/jsx-newline: off # let developers decide logically where new lines should go
   react/jsx-no-bind: warn
   react/jsx-no-comment-textnodes: warn

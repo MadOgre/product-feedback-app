@@ -1,7 +1,11 @@
+$black: #000;
+$off-white: #F7F8FD;
 $standard-blue: #3A4374;
 $white: #FFF;
 
 :export {
+  black: $black;
+  off-white: $off-white;
   standard-blue: $standard-blue;
   white: $white;
 }
